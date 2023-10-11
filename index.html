@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Whisk & Frost</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+        
+        
+    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav id="navbar">
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html"><img src="Images/Brown_Simple_Icon_Food_Logo__1_-removebg-preview.png" /></a>
+        
+      </div>
+      <!--Hamburger menu-->
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!--nav links-->
+      <ul class="nav-links">
+        <li>
+          <a href="#about">Our Story</a>
+        </li>
+        <li>
+          <a href="#products">Products & Pricing</a>
+        </li>
+        <li>
+          <a href="#reviews">Reviews</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#contact"><button id="nav-btn">contact us</button></a>
+          
+        </li>
+      </ul>
+    </nav>
+    <!--End of Navbar-->
+    <!--Hero-->
+    <div class="hero">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Whisk & Frost</h1>
+       
+          <a href="#contact"><button id="nav-btn">contact us</button></a>
+        </div>
+      </div>
+    </div>
+    <!--end of hero-->
+    <!--Cursive-->
+    <div class="cursive" id="about">
+      <h1 id="scroll-text">indulge in the Artistry of Baking Where Every Slice Tells a Sweet Story 🍰</h1>
+    </div>
+    <!--About-->
+    <div class="about-container">
+      <div class="about">
+        <img src="Images/meritt-thomas-52fj00DaOPA-unsplash.jpg" alt="Baker" class="about-img">
+        <div class="about-content">
+          <h1>Our story</h1>
+          <p>
+            In the heart of a cozy, sunlit kitchen in a quiet suburban neighborhood, the magic of Whisk & Frost first began. It was here that Emma Mitchell, a passionate baker with a vision, found her sweet calling.
+              <br>
+              <span id="dots">...</span>
+            <span id="more"> 
+              
+              <br>
+              As a young girl, Emma had always been captivated by the world of baking. She would eagerly watch her grandmother, a true baking virtuoso, whip up delectable treats and cakes that tasted like pure love. Emma was enchanted by the artistry, the precision, and the creativity that baking required. She felt a deep connection to the process, where simple ingredients transformed into mouthwatering masterpieces.
+              <br>
+              <br>
+              Today, Whisk & Frost continues to flourish, a testament to Emma's unwavering love for her craft and her commitment to spreading joy through the art of baking. Whether you're in search of a special occasion cake or just a sweet treat to brighten your day, Whisk & Frost is the place where every bite is a bite of happiness.
+              
+          </p>
+          </span>
+          <button onclick="showMore()" id="moreBtn" >read more</button>
+        </div>
+      </div>
+    </div>
+    <!--Products and pricing-->
+    <div class="pp-section" id="products">
+
+      <h1>Products:</h1>
+      <div class="cards">
+        <div class="card card1">
+          <div class="card-img-container">
+            <img src="Images/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg" alt="chocolate cake">
+          </div>
+          <div class="details">
+            <h3>Single layered cakes</h3>
+            <p>From R400</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-container">
+            <img src="Images/kash-tandon-rfiBEJu7TGE-unsplash.jpg" alt="Pink Cake">
+          </div>
+          <div class="details">
+            <h3>Custom decorated cakes</h3>
+            <p>From R500</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-container">
+            <img src="Images/magic-mary-9tWCe5wQsdM-unsplash.jpg" alt="cheese cake">
+          </div>
+          <div class="details">
+            <h3>Cheese cake</h3>
+            <p>From R600</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-container">
+            <img src="Images/brian-chan-qJ0zGkrE1Zg-unsplash.jpg" alt="cupcakes">
+          </div>
+          <div class="details">
+            <h3>Cupcakes</h3>
+            <p>From R12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-container">
+            <img src="Images/arantxa-aniorte-wIaYi63cmis-unsplash.jpg" alt="brownies">
+          </div>
+          <div class="details">
+            <h3>Brownies</h3>
+            <p>R15 each (minimum order of 6)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-container">
+            <img src="Images/karina-thomson-_RfFPXXa310-unsplash.jpg" alt="biscuits">
+          </div>
+          <div class="details">
+            <h3>Biscuits with royal icing</h3>
+            <p>R10 each (minimum order of 6)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials" id="reviews">
+      <div class="testimonials-header">
+        <h2>What our clients say about us:</h2>
+      </div>
+      <!-- Slider container -->
+      <div class="slider">
+        <!-- slide 1 -->
+        <div class="slide">
+          <div class="testimonial">
+            <p>“I'm a self-proclaimed dessert enthusiast, and Whisk & Frost is my go-to place for all things sweet. The cupcakes here are divine, and their red velvet cake is a slice of heaven. The quality and flavor of their creations are consistently top-notch. It's evident that they put their heart into each creation.”</p>
+            <p class="name">
+              <strong>James M</strong>
+            </p>
+          </div>
+        </div>
+        <!-- slide 2 -->
+        <div class="slide">
+          <div class="testimonial">
+            <p>"Whisk & Frost is an absolute gem in our community! I recently ordered a custom cake for my daughter's birthday, and I was blown away by the level of detail and the exquisite taste. Emma and her team are true artists, and their passion for baking shines through in every bite. I can't recommend them enough!"</p>
+            <p class="name">
+              <strong>Sarah W</strong>
+            </p>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div class="slide">
+          <div class="testimonial">
+            <p>“We had the pleasure of having Whisk & Frost provide the wedding cake for our special day. It was not only a visual masterpiece, but it tasted even better than it looked! The team worked closely with us to ensure our vision came to life, and it was beyond our wildest dreams. Thank you for making our wedding unforgettable!”</p>
+            <p class="name">
+              <strong>Lisa D</strong>
+            </p>
+          </div>
+        </div>
+       
+        <!-- slide 4 -->
+        <div class="slide">
+          <div class="testimonial">
+            <p>“Whisk & Frost has become a weekend tradition for my family. The staff is always friendly, and the bakery has an inviting atmosphere. Their assortment of pastries, cookies, and cakes is exceptional, and I've never been disappointed with any of my selections. A must-visit for anyone with a sweet tooth!”</p>
+            <p class="name">
+              <strong>Mark H</strong>
+            </p>
+          </div>
+        </div>
+               <!-- slide 5 -->
+        
+        <div class="slide">
+          <div class="testimonial">
+            <p>“I can't express how much I adore Whisk & Frost. The gluten-free options they offer are a godsend for someone with dietary restrictions like me. The taste and texture are so fantastic that I often forget I'm eating gluten-free. Their dedication to accommodating different needs is greatly appreciated. Thank you for making my life sweeter!”</p>
+            <p class="name">
+              <strong>Emily C</strong>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Control buttons -->
+      <button class="btn btn-next"> &#8594; </button>
+      <button class="btn btn-prev"> &#8592; </button>
+
+
+    </div>
+
+
+
+    <div class="contact" id="contact">
+      
+      <div class="form-container">
+        
+        <h1 class="form-header">Leave your details</h1>
+        <form method="POST" action="https://formsubmit.co/email@gmail.com"  enctype="multipart/form-data" id="contact-form">
+          <div class="form-name">
+            <label for="name"></label>
+            <input type="text" name="name" placeholder="Your name..." id="name-input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="text" placeholder="Your email..." id="email-input" name="email" required>
+          </div>
+          <div class="number">
+            <label for="number"></label>
+            <input type="text" placeholder="Your number..." id="number-input"  name="number" maxlength="10" required>
+          </div>
+          <div class="flavours">
+            <label for="flavours"></label>
+            <select placeholder="Choose your flavour" name="flavour" id="flavour-input" required>
+              <option disabled hidden selected>Flavours</option>
+              <option>Vanilla</option>
+              <option>Chocolate</option>
+              <option>Red Velvet</option>
+              <option>Lemon poppy</option>
+              <option>Carrot</option>
+              <option>Granadilla</option>
+            </select>
+          </div>
+          <br>
+          <label for="myfile">Upload an image to show us what you want:</label>
+          <input type="file" id="image-file" name="image-file">
+          <label for="birthday">When does your cake need to be ready?</label>
+          <input type="date" id="date" name="date">
+          <div class="message">
+            <textarea name="message" class="text-area" placeholder="Tell us the theme of your cake, the amount of people it must serve and any other information..." id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <input type="checkbox" id="terms" name="terms" value="accecpt" required>I accecpt the <a href="terms.html">Terms and Conditions</a>
+          <div class="submit">
+            <button type="submit"  id="form_button">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <!--Gallery-->
+    <div class="scroll-container" id="gallery">
+      <img src="Gallery/deva-williamson-S2jw81lfrG0-unsplash.jpg" alt="flowers cake">
+      <img src="Gallery/harper-nguyen-j6DH45Bflho-unsplash.jpg" alt="spiderman cake">
+      <img src="Gallery/jacob-thomas-6jHpcBPw7i8-unsplash.jpg" alt="frozen cake">
+      <img src="Gallery/jason-leung-fXAuCMEYGY4-unsplash.jpg" alt="purple cake">
+      <img src="Gallery/katie-rosario-QNyRp21hb5I-unsplash.jpg" alt="fortnite cake">
+      <img src="Gallery/mike-meeks-zk-fclJdGas-unsplash.jpg" alt="birthday cake">
+      <img src="Gallery/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg" alt="birthday cake">
+      <img src="Gallery/umesh-soni-LDnmyOaA-ew-unsplash.jpg" alt="rugby cake">
+    </div>
+   <!--Footer-->
+    <div class="footer">
+      <h2>Get In Touch!</h2>
+      <div class="footer-logo">
+       <!--<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Ruslan Babkin - Flaticon</a>-->
+       <a href="#"><img src="Icons/facebook.png"></a>
+        <!--<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Ruslan Babkin - Flaticon</a>-->
+        <a href="#"><img src="Icons/instagram.png"></a>
+        <!--<a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Ruslan Babkin - Flaticon</a>-->
+        <a href="#"><img src="Icons/whatsapp (1).png"></a>
+        <div>
+          <!--<a target="_blank" href="https://icons8.com/icon/3723/location">Location</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+          
+          
+
+       
+        </div>
+        <hr>
+
+        <div>
+          <p>Copyright &copy; Whisk & Frost</p>
+        </div>
+       
+      </div>
+
+    </div>
+    <script src="app.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11261390252"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11261390252');
+</script>
+  </body>
+</html>

@@ -1,0 +1,816 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+
+body, html{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  padding: 0;
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/*Navbar*/
+
+nav {
+  height: 75px;
+  width: 100vw;
+  background-color: rgba(241,241,241,0.90);
+  display: flex;
+  position: fixed;
+  z-index: 50;
+}
+
+/*logo*/
+.logo img{
+  width: 140px;
+  padding-left: 20px;
+  margin-top: -40px;
+}
+
+/*links*/
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 30%;
+  margin-bottom: 5px;
+}
+
+.nav-links li a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+#nav-btn{
+  margin-top: 8px;
+  border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	color: black;
+	letter-spacing: .05em;
+	overflow: hidden;
+	padding: 10px;
+	min-height: 3.3em;
+	position: relative;
+	text-transform: uppercase;
+  background-color: #F2BED1;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+
+
+/*hamburger Icon*/
+.hamburger div{
+ width: 30px;
+ height: 3px;
+ background-color: black;
+ margin: 5px;
+ transition: all 0.3s ease;
+}
+
+.hamburger{
+  display: none;
+  width: 42px;
+  height: 42px;
+}
+
+
+/*For small phone screens*/
+@media screen and (max-width: 1000px) {
+  nav{
+    position: fixed;
+    z-index: 1;
+    margin: auto; 
+  }
+
+  .hamburger{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+
+  .nav-links {
+      position: fixed;
+      background-color: #f1f1f1;
+      height: 100vh;
+      flex-direction: column;
+      pointer-events: none;
+      width: 60%;
+      transform: translateX(-100%);
+  }
+
+
+  .nav-links.open {
+     pointer-events: all;
+     transition-delay: .6s;
+     transform: translateX(80px);
+     transition-timing-function: ease;
+     transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .nav-links.close {
+    transition-delay: .6s;
+    transform: translateX(80px);
+    transition-timing-function: ease;
+    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .nav-links li{
+    margin-right: 50%;  
+  }
+
+
+
+  .hero-text h1{
+    font-size: 65px;
+    width: 120%;
+    margin-left: -30px;
+  
+
+    
+
+  }
+
+  .hero-text p{
+    font-size: 16px;
+  }
+
+  .hero-text{
+    width: 100vh;
+    height: auto;
+  }
+
+  .pp-section .cards .card {
+    margin-left: 8px;
+    margin-right: 15x;
+    width: 80%;
+    height: auto;
+  }
+  
+
+
+
+
+
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    width: 100%;
+   }
+
+
+   .about-img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+  }
+
+  .testimonials .slider {
+    height: 500px;
+    
+  }
+
+  .testimonials .btn-prev {
+    bottom: 50%;
+    left: -10%;
+  }
+  
+  .testimonials .btn-next {
+    bottom: 50%;
+    right: -10%;
+  }
+  
+  /*Form*/
+
+
+  .contact .form-container .email {
+    float: none;
+    width: 90%;
+    margin-left: 2px;
+  }
+  
+  .contact .form-container .form-name{
+    float: none;
+    width: 90%;
+    margin-left: 2px;
+  }
+  .contact .form-container .number{
+    width: 90%;
+    margin-left: 2px;
+  }
+
+  .contact .form-container .flavours{
+    width: 92%;
+    margin-left: 2px;
+  }
+
+  .contact .form-container #date{
+    width: 90%;
+    margin-left: 2px;
+
+  }
+
+  .contact .form-container .text-area{
+    width: 100%;
+    margin-left: 2px;
+  }
+
+  .contact ,.form-container #terms{
+    
+    font: inherit;
+    width: 10%;
+    margin-right: 5px;
+    height: 20px;
+    
+     
+   
+  }
+
+  .cursive h1{
+    font-size: 25px;
+
+  }
+
+  .facebook-page{
+    font-size: 16px;
+    width: 80%;
+  }
+  
+  .facebook-page iframe{
+    width: 80%;
+    
+  }
+
+  .footer .footer-logo img{
+    width: 20px;
+    
+  }
+
+  div.scroll-container {
+
+    overflow: scroll;
+  
+  }
+
+  .about-content{
+   margin-left: -100px;
+   
+  }
+
+}
+
+/*For big screens*/
+@media screen and (min-width: 1500px) {
+  .cards{
+    margin-left: 200px;
+    margin-right: 200px;
+    
+    
+   }
+  
+}
+
+
+
+
+/*hamburger animation*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  transition: all 0.0s ease;
+  width: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.hero{
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  background-image: url('Images/deva-williamson-YpIKbBZtSWY-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+
+}
+
+.hero-image{
+  position: absolute;
+  justify-content: center;
+
+  height: 50%;
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-radius: 10%;
+}
+
+.hero-text{
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  margin: auto;
+  font-size: 36px;
+  font-family: 'Berkshire Swash', cursive;
+  color: #111;
+  text-shadow: white;
+  font-weight: 100;
+
+  
+
+}
+
+
+
+ #hero-btn, #nav-btn{
+  border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	color: #fff;
+  font-family: 'Italiana', serif;
+	letter-spacing: .05em;
+	overflow: hidden;
+	padding: 20px;
+	min-height: 3.3em;
+	position: relative;
+	text-transform: uppercase;
+  background-color: #F2BED1;
+  box-shadow: 5px 10px 18px #888888;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*Cursive*/
+
+.cursive{
+  color: #393646;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #F9F5F6;
+  overflow: hidden;
+  display: flex;
+  height: 20px;
+
+  
+}
+
+#scroll-text{
+  display: flex;
+  transform: translateX(100%);
+  -moz-animation: scroll-animation 15s linear infinite;
+  -webkit-animation: scroll-animation 15s linear infinite;
+  animation: scroll-animation 15s linear infinite;
+}
+
+@keyframes scroll-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }}
+
+
+/*Products and pricing*/
+.pp-section {
+  background-color: #EEF1FF;
+}
+.pp-section h1{
+  text-align: center;
+  margin-top: -10%;
+  
+}
+
+
+
+.cards{
+  position: relative;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+ padding: 20px;
+ grid-gap: 20px;
+ align-items: center;
+ margin-top: 20px;
+ 
+}
+
+.card {
+  
+  border-radius: 20px;
+  background-color: #F2BED1;
+  box-shadow: 5px 10px 18px #888888;
+  width: 350px;
+  height: 400px;
+  margin: auto;
+}
+
+
+.card-img-container img{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+  height: 300px;
+  
+}
+
+.card-img-container{
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90% );
+}
+
+
+.details{
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+
+
+/*About*/
+
+.about{
+  align-items: center;
+  display: flex;
+  height: auto;
+  width: 70%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 250px;
+  
+}
+
+
+
+.about-content{
+  padding-left: 100px;
+  width: 70%;
+
+
+}
+
+.about-img{
+  width: 450px;
+  height: 450px;
+  border-radius: 10%;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+
+
+#more{
+  display: none;
+}
+
+#moreBtn{
+  position: relative;
+	display: inline;
+	padding: 10px 15px;
+	background-color: #FAEDCD; /*for compatibility with older browsers*/
+	background-image: #FAEDCD;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 5px;
+  border: none;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+
+
+/*Testimonials*/
+
+.testimonials{
+  display: grid;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+.testimonials-header{
+  padding-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.testimonial{
+  
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+  background-image: linear-gradient(to right top, #F8F6F4, #E3F4F4, #D2E9E9, #C4DFDF);
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+.testimonial .name{
+  padding-bottom:0px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 250px;
+  position: relative;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;  
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+
+.btn {
+  position: absolute;
+  width: 40px;
+  color: black;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: transparent;
+
+
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  font-size: 30px;
+  bottom: 50%;
+  left: -5%;
+}
+
+.btn-next {
+  font-size: 30px;
+  bottom: 50%;
+  right: -5%;
+}
+
+
+
+/*Contact form*/
+.contact{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #EEF1FF;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  width: 100%;
+  margin: 0;
+  
+}
+
+input {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.form-container{
+  border: solid 2px #5c5958;
+  box-shadow: 5px 10px 18px #888888;
+  background-color: #DDE6ED;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 30px;
+  margin: 50px 0;
+  
+}
+
+.form-header{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+
+
+
+
+
+.flavours{
+  width: 100%;
+  text-align: center;
+}
+
+#form_button{
+  margin-top: 8px;
+  border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	color: black;
+	letter-spacing: .05em;
+	overflow: hidden;
+	padding: 10px;
+	min-height: 3.3em;
+	position: relative;
+  background-color: #F2BED1;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+#terms{
+  
+  font: inherit;
+  width: 2%;
+  margin-right: 5px;
+  height: 20px;
+  
+   
+ 
+}
+
+/*Terms and conditions*/
+.terms-container{
+  width: 100%;
+  height: auto;
+  background-color: #F2BED1;
+  padding-bottom: 60px;
+}
+.terms-content{
+  width: 60%;
+  height: auto;
+  text-align: center;
+  padding-top: 100px;
+  margin: auto;
+  line-height: 35px;
+  
+ 
+ 
+}
+ .terms-content ul li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+.back-btn {
+  background-color: white;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  bottom: 10%;
+  left: 2%;
+}
+
+
+.facebook-page {
+ width: 100%;
+ text-align: center;
+ align-content: center;
+ justify-content: center;
+ 
+
+}
+
+.facebook-page h2{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.facebook-page iframe{
+  padding: 5px;
+  margin: auto;
+  
+}
+
+.footer{
+  height: auto;
+  width: 100%;
+  background-color: #F2BED1;
+  
+  
+}
+
+.footer .footer-logo img{
+  width: 50px;
+  padding: 10px;
+}
+
+.footer-logo{
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer h2{
+  text-align: center;
+}
+
+.footer hr{
+  border-top: 1px solid pink;
+}
+
+/*Gallery*/
+div.scroll-container {
+  height: 55vh;
+  background-color: #FCE9F1;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+div.scroll-container img {
+  padding: 5ppx;
+  height: 50vh;
+  width: auto;
+}
+
+#gallery::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top,
+											  #FFECEC 0%,
+											  #FFBDF7 50%,
+											  #E1AEFF 51%,
+											  #FF78C4 100%);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: pink; 
+  border-radius: 5px;
+}
+
+
+
+
