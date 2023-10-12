@@ -387,15 +387,23 @@ nav {
   font-weight: bold;
   background-color: #F9F5F6;
   overflow: hidden;
-  display: flex;
-  height: 20px;
+
+  height: 2vh;
+  overflow: hidden;
+ 
+  vertical-align: baseline;
+  position: absolute;
+
 
   
 }
 
 #scroll-text{
-  display: flex;
+ 
   transform: translateX(100%);
+  display: block;
+  text-align: center;
+  width: 100%;
   -moz-animation: scroll-animation 15s linear infinite;
   -webkit-animation: scroll-animation 15s linear infinite;
   animation: scroll-animation 15s linear infinite;
